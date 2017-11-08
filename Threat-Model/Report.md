@@ -185,7 +185,7 @@ Category:	Information Disclosure
 
 Description:	Data flowing across DNS Query may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user 
 
 **21.** Data Flow Sniffing  
 
@@ -193,7 +193,7 @@ Category:	Information Disclosure
 
 Description:	Data flowing across Input Data Flow may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 **33.** Data Flow Sniffing  
 
@@ -201,7 +201,7 @@ Category:	Information Disclosure
 
 Description:	Data flowing across Input HTTP Data may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 Denial of Service
 ------------------
