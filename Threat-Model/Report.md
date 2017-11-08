@@ -407,7 +407,8 @@ Current threat model
 </p>
 
 
-</style></head><body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
+
+<body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
           Created on 11/8/2017 5:00:00 PM</span><p tabindex="0"><strong>Threat Model Name: Pi-hole Threat Model</strong></p><p tabindex="0"><strong>Owner: Michael Galde </strong></p><p tabindex="0"><strong>Reviewer: </strong></p><p tabindex="0"><strong>Contributors: R3tr0 </strong></p><p tabindex="0"><strong>Description: A threat model utilizing mis-use cases of the open source software Pi-hole </strong></p><p tabindex="0"><strong>Assumptions: A fresh install of Pi-hole within a home network </strong></p><p tabindex="0"><strong>External Dependencies: </strong></p><br /><h3 tabindex="0">Threat Model Summary:</h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>46</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>46</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><p class="bugtrack" /><hr /><h2 tabindex="0">
             Diagram: Diagram 1</h2><img tabindex="0" src="https://user-images.githubusercontent.com/30883926/32528774-7e9d3354-c3fa-11e7-99f2-f18fb91a2736.png"/><h3 tabindex="0">Diagram 1 Diagram Summary:
           </h3><table><tr tabindex="0" role="row"><td>Not Started</td><td>46</td></tr><tr tabindex="0" role="row"><td>Not Applicable</td><td>0</td></tr><tr tabindex="0" role="row"><td>Needs Investigation</td><td>0</td></tr><tr tabindex="0" role="row"><td>Mitigation Implemented</td><td>0</td></tr><tr tabindex="0" role="row"><td>Total</td><td>46</td></tr><tr tabindex="0" role="row"><td>Total Migrated</td><td>0</td></tr></table><h3 tabindex="0">
