@@ -14,7 +14,7 @@ Spoofing
 
 Description:	Network Traffic may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Network Traffic. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<No requirement> 
+Justification:	All traffic uses internal processes, physical access is controled by user
 
 **4.** Spoofing of Destination Data Store Whitelist / Blacklist
 
@@ -38,7 +38,7 @@ Justification:	DNSSec is supported by Pi-hole
 
 Description:	Network Traffic may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no requirement>
+Justification:	All traffic uses internal processes, physical access is controled by user
 
 **17.** Spoofing the Pi-hole Process 
 
@@ -46,7 +46,7 @@ Category:	Spoofing
 
 Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by CLI user. Consider using a standard authentication mechanism to identify the destination process.
 
-Justification:      	
+Justification:      All traffic uses internal processes, physical access is controled by user	
 
 **18.** Spoofing the CLI user External Entity  
 
