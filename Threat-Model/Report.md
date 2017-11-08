@@ -140,7 +140,7 @@ Category:	Repudiation
 
 Description:	Network Traffic Result claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	<Weak auditing from source traffic>
 
 **9.** Potential Data Repudiation by Pi-hole  
 
