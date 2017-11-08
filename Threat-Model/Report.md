@@ -192,7 +192,7 @@ Category:	Information Disclosure
 
 Description:	Data flowing across DNS Query may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
-Justification:	<no mitigation provided>
+Justification:	DNS Query should be encrypted before it is sent to the data store.
 
 **21.** Data Flow Sniffing  
 
@@ -267,7 +267,7 @@ Category:	Denial Of Service
 
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
 
-Justification:	<no mitigation provided>
+Justification:	Pi-hole need to ensure that it is always available and notify user in case of poor network connections or traffic load.
 
 **33.** Data Flow Input Data Flow Is Potentially Interrupted  
 
