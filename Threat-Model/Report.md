@@ -212,7 +212,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 **5.** Potential Excessive Resource Consumption for Pi-hole or Whitelist / Blacklist 
 
@@ -220,7 +220,7 @@ Category:	Denial Of Service
 
 Description:	Does Pi-hole or Whitelist / Blacklist take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
 
-Justification:	<no mitigation provided>
+Justification:	White list and Black list is a script file controled by Pi-hole process 
 
 **11.** Potential Process Crash or Stop for Pi-hole  
 
@@ -228,7 +228,7 @@ Category:	Denial Of Service
 
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
 
-Justification:	<no mitigation provided>
+Justification:	Pi-hole process relies on internal OS to monitor health and provide restart of process 
 
 **12.** Data Flow DNS Query Is Potentially Interrupted  
 
@@ -236,7 +236,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 **22.** Potential Process Crash or Stop for Pi-hole  
 
@@ -244,7 +244,7 @@ Category:	Denial Of Service
 
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
 
-Justification:	<no mitigation provided>
+Justification:	Pi-hole process relies on internal OS to monitor health and provide restart of process 
 
 **23.** Data Flow Input Data Flow Is Potentially Interrupted  
 
@@ -252,7 +252,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 **34.** Potential Process Crash or Stop for Pi-hole  
 
@@ -260,7 +260,7 @@ Category:	Denial Of Service
 
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
 
-Justification:	<no mitigation provided>
+Justification:	Pi-hole process relies on internal OS to monitor health and provide restart of process 
 
 **33.** Data Flow Input Data Flow Is Potentially Interrupted  
 
@@ -268,7 +268,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 **40.** Potential Excessive Resource Consumption for Pi-hole or DNS log  
 
@@ -276,7 +276,7 @@ Category:	Denial Of Service
 
 Description:	Does Pi-hole or DNS log take explicit steps to control resource consumption? Resource consumption attacks can be hard to deal with, and there are times that it makes sense to let the OS do the job. Be careful that your resource requests don't deadlock, and that they do timeout.
 
-Justification:	<no mitigation provided>
+Justification:	DNS log is a script file controled by Pi-hole process, Pi-hole process is controled by host OS
           
 **43.** Data Flow Output Data Flow Is Potentially Interrupted  
 
@@ -284,7 +284,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
           
 **46.** Data Flow Output Data Flow Is Potentially Interrupted  
 
@@ -292,7 +292,7 @@ Category:	Denial Of Service
 
 Description:	An external agent interrupts data flowing across a trust boundary in either direction.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is on internal network, physical access is assumed controled by user
 
 
 Elevation of Privilege
