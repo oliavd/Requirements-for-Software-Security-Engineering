@@ -156,7 +156,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	<Logging users through Pi-Hole>
 
 **32.** Potential Data Repudiation by Pi-hole  
 
