@@ -133,7 +133,7 @@ Category:	Repudiation
 
 Description:	Network Traffic Result claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 **9.** Potential Data Repudiation by Pi-hole  
 
@@ -141,7 +141,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 **20.** Potential Data Repudiation by Pi-hole  
 
@@ -149,7 +149,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 **32.** Potential Data Repudiation by Pi-hole  
 
@@ -157,7 +157,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 **42.** External Entity CLI user Potentially Denies Receiving Data  
 
@@ -165,7 +165,7 @@ Category:	Repudiation
 
 Description:	CLI user claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 **45.** External Entity User Potentially Denies Receiving Data  
 
@@ -173,7 +173,7 @@ Category:	Repudiation
 
 Description:	Web user claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<no mitigation provided>
+Justification:	All traffic is stored in internal traffic logs
 
 
 Information Disclosure
