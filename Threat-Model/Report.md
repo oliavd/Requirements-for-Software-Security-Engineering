@@ -14,7 +14,7 @@ Spoofing
 
 Description:	Network Traffic may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Network Traffic. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	<No requirement> 
 
 **4.** Spoofing of Destination Data Store Whitelist / Blacklist
 
@@ -22,7 +22,7 @@ Justification:	<no mitigation provided>
 
 Description:	Whitelist / Blacklist may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of Whitelist / Blacklist. Consider using a standard authentication mechanism to identify the destination data store.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication (Hashes, Digital Signatures), Check permissions
 
 **6.** Spoofing the Pi-hole Process
 
@@ -30,7 +30,7 @@ Justification:	<no mitigation provided>
 
 Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by Network Traffic. Consider using a standard authentication mechanism to identify the destination process.
 
-Justification:	<no mitigation provided>
+Justification:	DNSSec is supported by Pi-hole
 
 **7.** Spoofing the Network Traffic External Entity
 
@@ -38,7 +38,7 @@ Justification:	<no mitigation provided>
 
 Description:	Network Traffic may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	<no requirement>
 
 **17.** Spoofing the Pi-hole Process 
 
@@ -46,7 +46,7 @@ Category:	Spoofing
 
 Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by CLI user. Consider using a standard authentication mechanism to identify the destination process.
 
-Justification:	<no mitigation provided>
+Justification:      	
 
 **18.** Spoofing the CLI user External Entity  
 
@@ -54,7 +54,7 @@ Category:	Spoofing
 
 Description:	CLI user may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication(SSH host keys for access over network, the user password is also required to run pihole commands)
 
 **28.** Spoofing the User External Entity 
 
@@ -62,15 +62,8 @@ Category:	Spoofing
 
 Description:	Web user may be spoofed by an attacker and this may lead to unauthorized access to Pi-hole. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication mechanism is used but need to be better implemented. IPSec could be used to authenticate traffic 
 
-**28.** Spoofing of the User External Destination Entity 
-
-Category:	Spoofing
-
-Description:	User may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of User. Consider using a standard authentication mechanism to identify the external entity.
-
-Justification:	<no mitigation provided>
 
 **30.** Spoofing the Pi-hole Process  
 
@@ -78,7 +71,7 @@ Category:	Spoofing
 
 Description:	Pi-hole may be spoofed by an attacker and this may lead to information disclosure by Web user. Consider using a standard authentication mechanism to identify the destination process.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication mechanism is used but need to be better implemented. IPSec could be used to authenticate traffic 
 
 **39.** Spoofing of Destination Data Store DNS log  
 
@@ -86,7 +79,7 @@ Category:	Spoofing
 
 Description:	DNS log may be spoofed by an attacker and this may lead to data being written to the attacker's target instead of DNS log. Consider using a standard authentication mechanism to identify the destination data store.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication(Hashes, Digital Signatures)
           
 **41.** Spoofing of the CLI user External Destination Entity  
 
@@ -94,7 +87,7 @@ Category:	Spoofing
 
 Description:	CLI user may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of CLI user. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication(SSH host keys for access over network, the user password is also required to run pihole commands)
 
 **44.** Spoofing of the User External Destination Entity  
 
@@ -102,7 +95,7 @@ Category:	Spoofing
 
 Description:	Web user may be spoofed by an attacker and this may lead to data being sent to the attacker's target instead of Web user. Consider using a standard authentication mechanism to identify the external entity.
 
-Justification:	<no mitigation provided>
+Justification:	Authentication mechanism is used but need to be better implemented. IPSec could be used to authenticate traffic 
 
 Tampering
 ---------
@@ -113,7 +106,7 @@ Category:	Tampering
 
 Description:	Data flowing across DNS Query may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
 
-Justification:	<no mitigation provided>
+Justification:	DNS Query Logs (Don't prevent but may deter)
 
 **19.** Potential Lack of Input Validation for Pi-hole  
 
@@ -121,7 +114,7 @@ Category:	Tampering
 
 Description:	Data flowing across Input Data Flow may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
 
-Justification:	<no mitigation provided>
+Justification:	Input validation 
 
 **31.** Potential Lack of Input Validation for Pi-hole  
 
@@ -129,7 +122,7 @@ Category:	Tampering
 
 Description:	Data flowing across Input HTTP Data may be tampered with by an attacker. This may lead to a denial of service attack against Pi-hole or an elevation of privilege attack against Pi-hole or an information disclosure by Pi-hole. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues. Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved list input validation approach.
 
-Justification:	<no mitigation provided>
+Justification:	Input validation and sanitization
           
 Repudiation
 -----------
@@ -140,7 +133,7 @@ Category:	Repudiation
 
 Description:	Network Traffic Result claims that it did not receive data from a process on the other side of the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<Weak auditing from source traffic>
+Justification:	<no mitigation provided>
 
 **9.** Potential Data Repudiation by Pi-hole  
 
@@ -148,7 +141,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<Potential weak protection from audit data>
+Justification:	<no mitigation provided>
 
 **20.** Potential Data Repudiation by Pi-hole  
 
@@ -156,7 +149,7 @@ Category:	Repudiation
 
 Description:	Pi-hole claims that it did not receive data from a source outside the trust boundary. Consider using logging or auditing to record the source, time, and summary of the received data.
 
-Justification:	<Logging users through Pi-Hole>
+Justification:	<no mitigation provided>
 
 **32.** Potential Data Repudiation by Pi-hole  
 
@@ -192,7 +185,7 @@ Category:	Information Disclosure
 
 Description:	Data flowing across DNS Query may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations. Consider encrypting the data flow.
 
-Justification:	DNS Query should be encrypted before it is sent to the data store.
+Justification:	<no mitigation provided>
 
 **21.** Data Flow Sniffing  
 
@@ -267,7 +260,7 @@ Category:	Denial Of Service
 
 Description:	Pi-hole crashes, halts, stops or runs slowly; in all cases violating an availability metric.
 
-Justification:	Pi-hole need to ensure that it is always available and notify user in case of poor network connections or traffic load.
+Justification:	<no mitigation provided>
 
 **33.** Data Flow Input Data Flow Is Potentially Interrupted  
 
