@@ -6,7 +6,7 @@ R3tr0 evaluated the open source software Pi-hole utilizing the Microsoft Threat 
 R3tr0 analyzed this diagram and by utilizing the STRIDE model we have identified the following threats as outlined below. 
 
 
-Current Threat model 
+Current Threat Model 
 ====================
 Please refer Pi-Hole_ThreatModel.htm in the current directory.
 
