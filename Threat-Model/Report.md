@@ -410,6 +410,8 @@ Current threat model
 <img src="https://user-images.githubusercontent.com/30883926/32528774-7e9d3354-c3fa-11e7-99f2-f18fb91a2736.png">
 </p>
 
+Threat model with mitigations is uploaded within this file structure 
+---------------------------------------------------------------------
 
 
 <body><h1 class="title" tabindex="0">Threat Modeling Report</h1><span tabindex="0">
