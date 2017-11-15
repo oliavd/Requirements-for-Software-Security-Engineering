@@ -1,5 +1,7 @@
-Code analysis for Software Security Engineering: 2-3 page report that describes the following:
+Code analysis for Software Security Engineering: 
 =========
+
+2-3 page report that describes the following:
 
 Code review strategy
 --------------------
