@@ -13,7 +13,8 @@ Summary of Observations
 
 Current threat model 
 ====================
-* ![Pi-HoleThreatModel](./Threat-Model/Pi-Hole_ThreatModel.jpg)
+---
+* ![Pi-HoleThreatModel](./Pi-Hole_ThreatModel.jpg)
 
 Threat model with mitigations is uploaded within this file structure 
 ---------------------------------------------------------------------
