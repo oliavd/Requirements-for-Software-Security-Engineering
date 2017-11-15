@@ -14,7 +14,7 @@ Summary of Observations
 Current threat model 
 ====================
 <p align="center">
-<img src="https://user-images.githubusercontent.com/30883926/32528774-7e9d3354-c3fa-11e7-99f2-f18fb91a2736.png">
+
 </p>
 
 Threat model with mitigations is uploaded within this file structure 
