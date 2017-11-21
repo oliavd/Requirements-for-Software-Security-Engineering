@@ -1,0 +1,59 @@
+$ shellcheck myscript
+ 
+Line 65:
+  return=$(echo -n ${1} | sha256sum | sed 's/\s.*$//')
+                   ^-- SC2086: Double quote to prevent globbing and word splitting.
+ 
+Line 66:
+  return=$(echo -n ${return} | sha256sum | sed 's/\s.*$//')
+                   ^-- SC2086: Double quote to prevent globbing and word splitting.
+ 
+Line 67:
+  echo ${return}
+       ^-- SC2086: Double quote to prevent globbing and word splitting.
+ 
+Line 87:
+    read -s -p "Enter New Password (Blank for no password): " PASSWORD
+    ^-- SC2162: read without -r will mangle backslashes.
+ 
+Line 96:
+    read -s -p "Confirm Password: " CONFIRM
+    ^-- SC2162: read without -r will mangle backslashes.
+ 
+Line 101:
+                hash=$(HashPassword ${PASSWORD})
+                                    ^-- SC2086: Double quote to prevent globbing and word splitting.
+ 
+Line 112:
+        source "${setupVars}"
+        ^-- SC1090: Can't follow non-constant source. Use a directive to specify location.
+ 
+Line 117:
+        while [[ 1 ]]; do
+                 ^-- SC2161: Instead of '[ 1 ]', use 'true'.
+ 
+Line 123:
+                let COUNTER=COUNTER+1
+                ^-- SC2219: Instead of 'let expr', prefer (( expr )) .
+ 
+Line 228:
+        source "${setupVars}"
+        ^-- SC1090: Can't follow non-constant source. Use a directive to specify location.
+ 
+Line 234:
+    if [ -z ${interface} ]; then
+            ^-- SC2086: Double quote to prevent globbing and word splitting.
+ 
+Line 268:
+    if [[ "${DHCP_IPv6}" == "true" ]]; then
+           ^-- SC2154: DHCP_IPv6 is referenced but not assigned.
+ 
+Line 391:
+        source "${setupVars}"
+        ^-- SC1090: Can't follow non-constant source. Use a directive to specify location.
+ 
+Line 427:
+        local datetimestamp=$(date "+%Y-%m-%d_%H-%M-%S")
+              ^-- SC2155: Declare and assign separately to avoid masking return values.
+
+$ 
