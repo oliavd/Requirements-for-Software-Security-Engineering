@@ -18,5 +18,5 @@ The Pi-hole service that is created utilizes the onboard dnsmasq service which i
 
 "R3tr0" conducted a manual code review of the open source Pi-hole project and have developed the following observations based on this review. Following the threat model report which can be found [here](/Threat-Model/Report.md), R3tr0 identified three external boundries that fall within the Pi-hole process. External network traffic, Command line user interface and the web user interface were identified as external boundries. 
 
-
+R3tr0 found a automated shell script checker which worked great for our poeoject called [Shell Check](https://www.shellcheck.net/)
 
