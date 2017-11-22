@@ -16,6 +16,7 @@ Team Name: R3tr0
 
 The Pi-hole service that is created utilizes the onboard dnsmasq service which is a lightweight DNS forwarder. Dnsmasq provides Domain Name System (DNS) forwarding, Dynamic Host Configuration Protocol (DHCP), router advertisement and network boot features for small computer networks. Pi-hole however utilizes this service to add a white-list / black-list feature which is then used to block advertisements or entire domains within a home network. Essesently making your entire home network capable of blocking advertisements like a computer with uBlock Origin.
 
-"R3tr0" conducted a manual code review of the open source Pi-hole project and have developed the following observations based on this review. Following the threat model report which can be found [here](Requirements-for-Software-Security-Engineering/Threat-Model/Report.md)
+"R3tr0" conducted a manual code review of the open source Pi-hole project and have developed the following observations based on this review. Following the threat model report which can be found [here](/Threat-Model/Report.md)
 
+https://github.com/mgalde/Requirements-for-Software-Security-Engineering/blob/master/Code_Review/Requirements-for-Software-Security-Engineering/Threat-Model/Report.md
 
