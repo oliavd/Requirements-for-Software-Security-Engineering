@@ -17,3 +17,19 @@ Code review strategy
 Due Date
 --------
 Nov 29 by 11:59pm
+
+
+
+
+
+
+Good resource to branch off of 
+https://dev.to/thiht/shell-scripts-matter
+
+
+Shell style guide https://google.github.io/styleguide/shell.xml
+
+
+Shell check
+https://www.shellcheck.net/
+
